@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Horario Ruralcamp",
+  "version": "1.1",
+  "description": "Una extensión para mostrar un calendario del bootcamp Ruralcamp Factoria F5 de Asturias en Notion en pequeño.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab", "cookies", "storage"],
+  "host_permissions": ["https://calendar.google.com/"],
+  "icons": {
+    "48": "icon.png",
+    "96": "icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
